@@ -1,6 +1,8 @@
 package tech.kddez.user.infrastructure.persistence;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

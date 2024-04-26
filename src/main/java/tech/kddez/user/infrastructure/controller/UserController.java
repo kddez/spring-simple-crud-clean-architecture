@@ -1,5 +1,6 @@
 package tech.kddez.user.infrastructure.controller;
 
+import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import tech.kddez.user.application.usecases.UserInteractor;
