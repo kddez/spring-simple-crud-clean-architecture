@@ -3,7 +3,7 @@ package tech.kddez.user.main;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import tech.kddez.user.application.gateways.UserGateway;
-import tech.kddez.user.application.usecases.CreateUserInteractor;
+import tech.kddez.user.application.usecases.UserInteractor;
 import tech.kddez.user.infrastructure.controller.UserDTOMapper;
 import tech.kddez.user.infrastructure.gateways.UserEntityMapper;
 import tech.kddez.user.infrastructure.gateways.UserRepositoryGateway;
@@ -13,8 +13,8 @@ import tech.kddez.user.infrastructure.persistence.UserRepository;
 public class UserConfig {
 
     @Bean
-    CreateUserInteractor createUserCase(UserGateway userGateway) {
-        return new CreateUserInteractor(userGateway);
+    UserInteractor createUserCase(UserGateway userGateway) {
+        return new UserInteractor(userGateway);
     }
 
     @Bean
